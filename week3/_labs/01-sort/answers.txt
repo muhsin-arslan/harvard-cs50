@@ -1,0 +1,33 @@
+sort1 uses: bubble sort
+
+How do you know?: It gave the slowest result in Random and Reserved scenarios.
+
+sort2 uses: merge sort
+
+How do you know?: It gave the fastest result in Random and Reserved scenarios.
+
+sort3 uses: selection sort
+
+How do you know?: In trials with the Random10k and Random50k scenarios, I found that it is not as slow as sort1 and not as fast as sort2.
+On average, the same processes were output for the best-case Sorted50K (because it's already sorted) and worst-case (random scenarios). So O(n2).
+
+---------
+Random 10K
+Sort 1 => 0.341s - 0.323s - 0.303s
+Sort 2 => 0.098s - 0.068s - 0.061s
+Sort 3 => 0.200s - 0.192s - 0.155s
+
+Random 50K
+Sort 1 => 7.000s - 7.700s - 7.600s
+Sort 2 => 0.670s - 0.620s - 0.600s
+Sort 3 => 3.400s - 3.496s - 3.373s
+
+Sorted 50K
+Sort 1 => 0.643s - 0.552s - 0.649s
+Sort 2 => 0.670s - 0.645s - 0.621s
+Sort 3 => 3.302s - 3.595s - 3.419s
+
+Reversed 50K
+Sort 1 => 5.824s - 5.874s - 5.732s
+Sort 2 => 0.641s - 0.633s - 0.788s
+Sort 3 => 3.539s - 3.391s - 3.617s
